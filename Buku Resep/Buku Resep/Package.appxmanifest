@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+  <Identity Name="55196Kakor.BUKURESEP" Publisher="CN=F16E8F66-FAE3-4E5A-A3D6-2EDD5C2D0FB0" Version="1.0.0.2" />
+  <Properties>
+    <DisplayName>BUKU RESEP</DisplayName>
+    <PublisherDisplayName>Kakor</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2.1</OSMinVersion>
+    <OSMaxVersionTested>6.2.1</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="Buku_Resep.App">
+      <VisualElements DisplayName="BUKU RESEP" Logo="Assets\Logo.png" SmallLogo="Assets\SmallLogo.png" Description="Buku Resep" ForegroundText="light" BackgroundColor="#464646">
+        <DefaultTile ShowName="allLogos" />
+        <SplashScreen Image="Assets\SplashScreen.png" BackgroundColor="#f6c235" />
+        <InitialRotationPreference>
+          <Rotation Preference="landscape" />
+        </InitialRotationPreference>
+      </VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>

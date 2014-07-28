@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9035CCF9-58ED-44B2-A006-FDC8D4472F09}</ProjectGuid>
+    <OutputType>AppContainerExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Buku_Resep</RootNamespace>
+    <AssemblyName>Buku Resep</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{BC8A1FFA-BEE3-4634-8014-F334798102B3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PackageCertificateKeyFile>Buku Resep_StoreKey.pfx</PackageCertificateKeyFile>
+    <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
+    <PackageCertificateThumbprint>011CC4F78EF6921EC009C02AB8C3F3C430F8DEBF</PackageCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Common\BasePrintPage.cs" />
+    <Compile Include="ContinuationPage.xaml.cs" />
+    <Compile Include="ExtendedSplash.xaml.cs">
+      <DependentUpon>ExtendedSplash.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="items.cs" />
+    <Compile Include="ItemsPage.xaml.cs">
+      <DependentUpon>ItemsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ScenarioOutput2.xaml.cs" />
+    <Compile Include="SplitPage.xaml.cs">
+      <DependentUpon>SplitPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DataModel\SampleDataSource.cs" />
+    <Compile Include="Common\BindableBase.cs" />
+    <Compile Include="Common\BooleanToVisibilityConverter.cs" />
+    <Compile Include="Common\BooleanNegationConverter.cs" />
+    <Compile Include="Common\LayoutAwarePage.cs" />
+    <Compile Include="Common\RichTextColumns.cs" />
+    <Compile Include="Common\SuspensionManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <None Include="Buku Resep_StoreKey.pfx" />
+    <None Include="Common\ReadMe.txt" />
+    <None Include="Buku Resep_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\Asia\asia.jpg" />
+    <Content Include="Assets\Asia\baksoloa.jpg" />
+    <Content Include="Assets\Asia\bistik.jpg" />
+    <Content Include="Assets\Asia\cumi.jpg" />
+    <Content Include="Assets\Asia\miegorengcina.jpg" />
+    <Content Include="Assets\Asia\teriyakitofu.jpg" />
+    <Content Include="Assets\bg.png" />
+    <Content Include="Assets\Daerah\ati ampela.jpg" />
+    <Content Include="Assets\Daerah\daerah.jpg" />
+    <Content Include="Assets\Daerah\dendengbalado.jpg" />
+    <Content Include="Assets\Daerah\lumpiasemarang.jpg" />
+    <Content Include="Assets\Daerah\Mie goreng.jpg" />
+    <Content Include="Assets\Daerah\sotobetawi.jpg" />
+    <Content Include="Assets\Eropa\borjupaprikas.jpg" />
+    <Content Include="Assets\Eropa\cheese.jpg" />
+    <Content Include="Assets\Eropa\eropa.jpg" />
+    <Content Include="Assets\Eropa\frencfries.jpg" />
+    <Content Include="Assets\Eropa\kopasztasKocka.jpg" />
+    <Content Include="Assets\Eropa\makaroni.jpg" />
+    <Content Include="Assets\Eropa\Pancake.jpg" />
+    <Content Include="Assets\home-128.png" />
+    <Content Include="Assets\home.png" />
+    <Content Include="Assets\koki.png" />
+    <Content Include="Assets\Kue\bikaambon.jpg" />
+    <Content Include="Assets\Kue\kue.jpg" />
+    <Content Include="Assets\Kue\pukis.jpg" />
+    <Content Include="Assets\Kue\putu.jpg" />
+    <Content Include="Assets\Kue\rotibolu.jpg" />
+    <Content Include="Assets\Kue\wajik.jpg" />
+    <Content Include="Assets\Kue\wingko.jpg" />
+    <Content Include="Assets\Logo.scale-100.png" />
+    <Content Include="Assets\Logoo.png" />
+    <Content Include="Assets\Nusantara\asinanjakarta.jpg" />
+    <Content Include="Assets\Nusantara\gulai kambing.jpg" />
+    <Content Include="Assets\Nusantara\nusantara.jpg" />
+    <Content Include="Assets\Nusantara\orakarik.jpg" />
+    <Content Include="Assets\Nusantara\otak-otak jamur.jpg" />
+    <Content Include="Assets\Nusantara\pepesikan.jpg" />
+    <Content Include="Assets\print-128.png" />
+    <Content Include="Assets\print.png" />
+    <Content Include="Assets\Seafood\cumi.jpg" />
+    <Content Include="Assets\Seafood\cumibakar.jpg" />
+    <Content Include="Assets\Seafood\ikantomat.jpg" />
+    <Content Include="Assets\Seafood\seafood.jpg" />
+    <Content Include="Assets\Seafood\udang.jpg" />
+    <Content Include="Assets\Small.png" />
+    <Content Include="Assets\SmallLogo.scale-100.png" />
+    <Content Include="Assets\SmallLogo.targetsize-32.png" />
+    <Content Include="Assets\Splash.png" />
+    <Content Include="Assets\SplashScreen.scale-100.png" />
+    <Content Include="Assets\Store.png" />
+    <Content Include="Assets\LightGray.png" />
+    <Content Include="Assets\MediumGray.png" />
+    <Content Include="Assets\DarkGray.png" />
+    <Content Include="Assets\StoreLogo.scale-100.png" />
+    <Content Include="Assets\Text.png" />
+    <None Include="Package.StoreAssociation.xml" />
+    <Page Include="ExtendedSplash.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ScenarioOutput2.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ContinuationPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="Common\StandardStyles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ItemsPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SplitPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0' ">
+    <VisualStudioVersion>11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
